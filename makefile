@@ -19,5 +19,5 @@ all: ${OBJS}
 		@echo $(text3)
 
 clean:
-	rm -rf src/*.o rational_t
+	rm -rf *.o rational_t
 	@echo $(text4)
