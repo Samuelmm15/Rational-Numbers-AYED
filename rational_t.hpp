@@ -19,8 +19,8 @@
 #include <cmath>
 
 // pauta de estilo [5]
-# define EPSILON 1e-6
-
+# define 
+EPSILON 1e-6
 // Se hace uso del espacio de nombre para evitar tener que hacer uso de std cada vez
 using namespace std;
 
@@ -59,6 +59,9 @@ public:
   // bool is_less(const rational_t&, const double precision = EPSILON) const;
   // Comprueba si un número racional es menor que otro
   bool is_less(const rational_t&, const double precision = EPSILON) const;
+
+  /// Modificación del código para comprobar si un número racional es positivo o negativo
+  bool is_positive(void) const;
   
   // FASE III
   // rational_t add(const rational_t&);

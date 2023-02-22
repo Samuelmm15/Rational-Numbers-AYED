@@ -46,6 +46,20 @@ int main()
   cout << "x == y? " << (x.is_equal(y) ? "true" : "false") << endl;
   cout << "x < y? " << (x.is_greater(y) ? "true" : "false") << endl;
   cout << "x > y? " << (x.is_less(y) ? "true" : "false") << endl;
+  cout << "x is positive? " << (x.is_positive() ? "true" : "false") << endl;
+  cout << "y is positive? " << (y.is_positive() ? "true" : "false") << endl;
+
+  // Otro ejemplo para comprobar el funcionamiento de la modificación
+  cout << endl;
+  cout << "<< COMPROBACIÓN DE LA MODIFICACIÓN >>" << endl;
+  rational_t w(-2, -3), z(-2, 5);
+  w.write();
+  z.write();
+  cout << "w == z? " << (w.is_equal(z) ? "true" : "false") << endl;
+  cout << "w < z? " << (w.is_greater(z) ? "true" : "false") << endl;
+  cout << "w > z? " << (w.is_less(z) ? "true" : "false") << endl;
+  cout << "w is positive? " << (w.is_positive() ? "true" : "false") << endl;
+  cout << "z is positive? " << (z.is_positive() ? "true" : "false") << endl;
 
   // Otro ejemplo para comprobar el funcionamiento de los métodos
   // rational_t w(2, 3), z(2, 3);

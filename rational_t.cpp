@@ -100,7 +100,12 @@ rational_t::is_less(const rational_t& r, const double precision) const
         return (this->value() - r.value() > -precision);
 }
 
-
+/// Implementación de la modificación de la primera práctica, para la comprobación de que un número racional sea positivo o negativo
+bool
+rational_t::is_positive() const
+{
+    return (this->value() > 0);
+}
 
 // operaciones
 // Implementación de la operación de suma
